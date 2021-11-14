@@ -1,18 +1,45 @@
 <template>
-  <q-page class="column justify-center q-gutter-y-md">
-    <from-card />
-    <div class="text-center">
-      <q-icon class="swapArrow" name="fas fa-arrow-down" size="1.5rem" />
+  <q-page >
+    <div class="q-pa-md">
+
+      <div class="row justify-center q-mt-md">
+        <div class="col-sm-12 col-md-8">
+          <from-card />
+        </div>
+      </div>
+
+      <div class="row justify-center q-mt-md">
+        <q-icon class="swapArrow" name="fas fa-arrow-down" size="1.5rem" />
+      </div>
+
+      <div class="row justify-center q-mt-md">
+        <div class="col-sm-12 col-md-8">
+          <to-card />
+        </div>
+      </div>
+    
+      <div class="row justify-center q-mt-md">
+          <q-btn
+            no-caps
+            class="sendBtn self-center"
+            label="Send"
+            @click="trySend()"
+          />
+      </div>
+
+      <div class="row justify-center q-mt-xl justify-evenly">
+        <div class="col-sm-12 col-md-5 q-mt-md">
+            <apex-line-chart />
+        </div>
+
+        <div class="col-sm-12 col-md-5 q-mt-md">
+            <apex-line-chart />
+        </div>
+          
+      </div>
+
     </div>
-    <to-card />
-    <div class="flex justify-center">
-      <q-btn
-        no-caps
-        class="sendBtn self-center"
-        label="Send"
-        @click="trySend()"
-      />
-    </div>
+
   </q-page>
 </template>
 
@@ -22,10 +49,13 @@ import fromCard from "src/components/FromCard";
 import toCard from "src/components/ToCard";
 import { accountName } from "src/store/account/getters";
 import { getFromChain } from "src/store/bridge/getters";
+import ApexLineChart from '../components/ApexLineChart.vue';
 
 export default {
   name: "Index",
-  components: { fromCard, toCard },
+  components: { fromCard, 
+  toCard,
+  ApexLineChart, },
   data() {
     return {
       showTransaction: false,
