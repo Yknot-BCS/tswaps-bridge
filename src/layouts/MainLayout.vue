@@ -3,8 +3,15 @@
     <q-header class="transparent">
       <q-toolbar class="toolbar">
         <q-toolbar-title>
-          T-Swaps Bridge
+          <q-btn
+          flat 
+        to="/">
+        T-Swaps Bridge</q-btn>
         </q-toolbar-title>
+
+        <q-btn  class="float-left"
+        to="/swap">
+        Swap</q-btn>
 
         <login-button></login-button>
         <q-btn

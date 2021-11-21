@@ -1604,6 +1604,11 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
+"@vue-icons/feather@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@vue-icons/feather/-/feather-1.0.19.tgz#59db985854b8a104b7d38176746743b0941517f7"
+  integrity sha512-hqVn8AltoNjBwBZaB+WaG4Qo2TdQ/nwlBPua+TZgGc4g9f3Fi+S/hM9ol5k4oMBUux+HvQMYOtt+m93sLc5VjQ==
+
 "@vue/component-compiler-utils@^3.1.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.2.0.tgz#8f85182ceed28e9b3c75313de669f83166d11e5d"
