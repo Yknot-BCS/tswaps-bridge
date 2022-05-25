@@ -3,7 +3,7 @@
     <q-header class="transparent">
       <q-toolbar class="toolbar">
         <div class="col">
-          <q-toolbar-title class="gt-xs">
+          <q-toolbar-title class="gt-sm">
             T-Swaps bridge - Telos, EOS and WAX
           </q-toolbar-title>
         </div>
